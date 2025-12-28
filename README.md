@@ -42,4 +42,11 @@ Or you can just generate it in that mixxx folder. The javascript file has to be 
 $ ./genxml-ddjgrv6.py  > ~/.mixxx/controllers/Pioneer-DDJ-GRV6.midi.xml
 ```
 
+You can avoid the copy, if you simply link from the mixxx controllers folder to this folder with the 
+checked out or generated javascript and XML file.
+
 Once this matured and if there is demand then I can integrate it into mixxx.
+
+## Resources
+ * Pioneer lists at [their website](https://support.pioneerdj.com/hc/en-us/articles/37284057102489-DDJ-GRV6-MIDI-compatible-software)
+the [list of midi messages](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-grv6/ddj-grv6_midi_message_list_e1.pdf) 
