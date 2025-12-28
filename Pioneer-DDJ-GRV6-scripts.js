@@ -420,6 +420,7 @@ PioneerDDJGRV6.loopToggle = function(value, group, control) {
  * - Long Press: Sync Lock (Dauerhaft)
  */
 PioneerDDJGRV6.beatSyncHandler = function (channel, control, value, status, group) {
+    console.log("PioneerDDJGRV6.beatSyncHandler("+channel+", "+ control+ ", "+value+", "+status+ ", "+ group +") F5");
     var syncNote = 0x58; // D19 Note laut MIDI-Dokumentation
     
     var deckNum = parseInt(group.substring(8, 9)) - 1;
