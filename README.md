@@ -17,7 +17,7 @@ $ mixxx --controller-debug --developer 2>&1 | tee log.txt
 
 Feedback welcome
 
-## support & known limitations
+## Support & known limitations
 
 The mapping is currently incomplete. While selecting a track, cueing and playing, using the
 mixer and fading works, effects are not fully implemented. You can pick an effect and mix it 
@@ -25,3 +25,21 @@ in, but the roation knob to select the effects is not working.
 
 Basic jog-wheel support is implemented: you can scratch and touching the wheel from the top stops playing.
 
+## The Mapping
+
+The mapping is a very repetetive XML file. Lots of sections are repeated multiple times, eg 4 times as there
+are 4 decks supported by this controller. The sections  are very similar but have a counter the increments per
+deck. I use the python file `genxml-ddjgrv6.py` to generate the full XML file. 
+
+This generates the XML file in the current folder. You can review it and copy it over the the mixxx folder
+with the custom mappings.
+```
+$ ./genxml-ddjgrv6.py  > Pioneer-DDJ-GRV6.midi.xml
+```
+
+Or you can just generate it in that mixxx folder. The javascript file has to be in the the same mixxx folder.
+```
+$ ./genxml-ddjgrv6.py  > ~/.mixxx/controllers/Pioneer-DDJ-GRV6.midi.xml
+```
+
+Once this matured and if there is demand then I can integrate it into mixxx.
