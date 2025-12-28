@@ -3,7 +3,7 @@
     <info>
         <name>Pioneer DDJ-GRV6</name>
         <author>Jörg Beyer</author>
-        <description>Midi Mapping for the Pioneer DDJ-GRV6, 2025-12-28 16:13</description>
+        <description>Midi Mapping for the Pioneer DDJ-GRV6, 2025-12-28 17:03</description>
         <forums>TBD</forums>
     </info>
     <controller id="DDJ-GRV6">
@@ -177,35 +177,35 @@
                 <options><Normal/></options>
             </control>
             <control>
-                <description>D21 set/call cue, back cue - Deck 1 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 1 - normal</description>
                 <group>[Channel1]</group>
                 <key>cue_default</key>
                 <status>0x90</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
             </control>
             <control>
-                <description>D21 set/call cue, back cue - Deck 2 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 2 - normal</description>
                 <group>[Channel2]</group>
                 <key>cue_default</key>
                 <status>0x91</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
             </control>
             <control>
-                <description>D21 set/call cue, back cue - Deck 3 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 3 - normal</description>
                 <group>[Channel3]</group>
                 <key>cue_default</key>
                 <status>0x92</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
             </control>
             <control>
-                <description>D21 set/call cue, back cue - Deck 4 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 4 - normal</description>
                 <group>[Channel4]</group>
                 <key>cue_default</key>
                 <status>0x93</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
             </control>
             <control>
@@ -1212,41 +1212,41 @@
                 <off>0x00</off>
             </output>
             <output>
-                <description>D21 set/call cue, back cue - Deck 1 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 1 - normal</description>
                 <group>[Channel1]</group>
                 <key>cue_default</key>
                 <status>0x90</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
                 <on>0x7F</on>
                 <off>0x00</off>
             </output>
             <output>
-                <description>D21 set/call cue, back cue - Deck 2 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 2 - normal</description>
                 <group>[Channel2]</group>
                 <key>cue_default</key>
                 <status>0x91</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
                 <on>0x7F</on>
                 <off>0x00</off>
             </output>
             <output>
-                <description>D21 set/call cue, back cue - Deck 3 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 3 - normal</description>
                 <group>[Channel3]</group>
                 <key>cue_default</key>
                 <status>0x92</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
                 <on>0x7F</on>
                 <off>0x00</off>
             </output>
             <output>
-                <description>D21 set/call cue, back cue - Deck 4 - normal</description>
+                <description>D2 set/call cue, back cue - Deck 4 - normal</description>
                 <group>[Channel4]</group>
                 <key>cue_default</key>
                 <status>0x93</status>
-                <midino>0x0A</midino>
+                <midino>0x0C</midino>
                 <options><Normal/></options>
                 <on>0x7F</on>
                 <off>0x00</off>

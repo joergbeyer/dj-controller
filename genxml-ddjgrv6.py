@@ -177,17 +177,13 @@ def section_deck(xc, num_decks):
         xc.print(il, 'output', entries+['on', 'off'])
 
     xc.kv['key'] = 'cue_default'
-    xc.kv['midino'] = '0x0A'
+    xc.kv['midino'] = '0x0C'
     xc.kv['options'] = '<Normal/>'
     for i in range(num_decks):
         xc.kv['group'] = f'[Channel{i+1}]'
-        xc.kv['description'] = gen_description('D21', 'set/call cue, back cue', i+1, 'normal')
+        xc.kv['description'] = gen_description('D2', 'set/call cue, back cue', i+1, 'normal')
         xc.kv['status'] = hexfmt(int("0x90",16)+i)
         xc.print(il, 'control', entries)
-    for i in range(num_decks):
-        xc.kv['group'] = f'[Channel{i+1}]'
-        xc.kv['description'] = gen_description('D21', 'set/call cue, back cue', i+1, 'normal')
-        xc.kv['status'] = hexfmt(int("0x90",16)+i)
         xc.print(il, 'output', entries+['on', 'off'])
 
     xc.kv['key'] = 'start_play'
