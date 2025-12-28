@@ -311,7 +311,7 @@ def section_deck(xc, num_decks):
         xc.print(il, 'control', entries)
 
     xc.kv['midino'] = '0x4E'
-    xc.kv['key'] = 'PioneerDDJGRV6.toggleLoopAdjustOut'
+    xc.kv['key'] = f'{prefix}.toggleLoopAdjustOut'
     for i in range(num_decks):
         xc.kv['group'] = f'[Channel{i+1}]'
         xc.kv['description'] = gen_description('D7', 'shift LOOP out', i+1, 'adjust loop out')
@@ -319,7 +319,28 @@ def section_deck(xc, num_decks):
         xc.print(il, 'control', entries)
 
 
+    # beat sync
+    xc.kv['midino'] = '0x58'
+    xc.kv['options'] = '<Script-Binding/>'
+    for i in range(num_decks):
+        xc.kv['group'] = f'[Channel{i+1}]'
+        xc.kv['description'] = gen_description('D19', 'Deck ', i+1, 'beat sync')
+        xc.kv['status'] = hexfmt(int("0x90",16)+i)
+        xc.kv['key'] = f'{prefix}.beatSyncHandler'
+        xc.print(il, 'control', entries)
+        xc.kv['key'] = 'sync_enabled'
+        xc.print(il, 'output', entries+['on', 'off'])
 
+    xc.kv['midino'] = '0x5C'
+    xc.kv['options'] = '<Script-Binding/>'
+    for i in range(num_decks):
+        xc.kv['group'] = f'[Channel{i+1}]'
+        xc.kv['description'] = gen_description('D19', 'Deck ', i+1, 'beat sync off')
+        xc.kv['status'] = hexfmt(int("0x90",16)+i)
+        xc.kv['key'] = f'{prefix}.beatSyncHandler'
+        xc.print(il, 'control', entries)
+        xc.kv['key'] = 'sync_enabled'
+        xc.print(il, 'output', entries+['on', 'off'])
 
     #xc.kv['description'] = 'Channelfader - slider'
 
