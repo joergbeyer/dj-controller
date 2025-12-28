@@ -3,7 +3,7 @@
     <info>
         <name>Pioneer DDJ-GRV6</name>
         <author>Jörg Beyer</author>
-        <description>Midi Mapping for the Pioneer DDJ-GRV6, 2025-12-28 15:40</description>
+        <description>Midi Mapping for the Pioneer DDJ-GRV6, 2025-12-28 16:13</description>
         <forums>TBD</forums>
     </info>
     <controller id="DDJ-GRV6">
@@ -775,15 +775,7 @@
                 <key>pregain</key>
                 <status>0xB0</status>
                 <midino>0x04</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M3 TRIM - Deck 1 - normal</description>
-                <group>[Channel1]</group>
-                <key>pregain</key>
-                <status>0xB0</status>
-                <midino>0x24</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M3 TRIM - Deck 2 - normal</description>
@@ -791,15 +783,7 @@
                 <key>pregain</key>
                 <status>0xB1</status>
                 <midino>0x04</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M3 TRIM - Deck 2 - normal</description>
-                <group>[Channel2]</group>
-                <key>pregain</key>
-                <status>0xB1</status>
-                <midino>0x24</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M3 TRIM - Deck 3 - normal</description>
@@ -807,15 +791,7 @@
                 <key>pregain</key>
                 <status>0xB2</status>
                 <midino>0x04</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M3 TRIM - Deck 3 - normal</description>
-                <group>[Channel3]</group>
-                <key>pregain</key>
-                <status>0xB2</status>
-                <midino>0x24</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M3 TRIM - Deck 4 - normal</description>
@@ -823,15 +799,7 @@
                 <key>pregain</key>
                 <status>0xB3</status>
                 <midino>0x04</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M3 TRIM - Deck 4 - normal</description>
-                <group>[Channel4]</group>
-                <key>pregain</key>
-                <status>0xB3</status>
-                <midino>0x24</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M4 EQ Hi - Deck 1 - normal</description>
@@ -839,15 +807,7 @@
                 <key>parameter3</key>
                 <status>0xB0</status>
                 <midino>0x07</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M4 EQ Hi - Deck 1 - normal</description>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter3</key>
-                <status>0xB0</status>
-                <midino>0x27</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M4 EQ Hi - Deck 2 - normal</description>
@@ -855,15 +815,7 @@
                 <key>parameter3</key>
                 <status>0xB1</status>
                 <midino>0x07</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M4 EQ Hi - Deck 2 - normal</description>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter3</key>
-                <status>0xB1</status>
-                <midino>0x27</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M4 EQ Hi - Deck 3 - normal</description>
@@ -871,15 +823,7 @@
                 <key>parameter3</key>
                 <status>0xB2</status>
                 <midino>0x07</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M4 EQ Hi - Deck 3 - normal</description>
-                <group>[EqualizerRack1_[Channel3]_Effect1]</group>
-                <key>parameter3</key>
-                <status>0xB2</status>
-                <midino>0x27</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M4 EQ Hi - Deck 4 - normal</description>
@@ -887,15 +831,7 @@
                 <key>parameter3</key>
                 <status>0xB3</status>
                 <midino>0x07</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M4 EQ Hi - Deck 4 - normal</description>
-                <group>[EqualizerRack1_[Channel4]_Effect1]</group>
-                <key>parameter3</key>
-                <status>0xB3</status>
-                <midino>0x27</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 1 - normal</description>
@@ -903,15 +839,7 @@
                 <key>parameter2</key>
                 <status>0xB0</status>
                 <midino>0x0B</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 1 - normal</description>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter2</key>
-                <status>0xB0</status>
-                <midino>0x2B</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 2 - normal</description>
@@ -919,15 +847,7 @@
                 <key>parameter2</key>
                 <status>0xB1</status>
                 <midino>0x0B</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 2 - normal</description>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter2</key>
-                <status>0xB1</status>
-                <midino>0x2B</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 3 - normal</description>
@@ -935,15 +855,7 @@
                 <key>parameter2</key>
                 <status>0xB2</status>
                 <midino>0x0B</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 3 - normal</description>
-                <group>[EqualizerRack1_[Channel3]_Effect1]</group>
-                <key>parameter2</key>
-                <status>0xB2</status>
-                <midino>0x2B</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 4 - normal</description>
@@ -951,15 +863,7 @@
                 <key>parameter2</key>
                 <status>0xB3</status>
                 <midino>0x0B</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 4 - normal</description>
-                <group>[EqualizerRack1_[Channel4]_Effect1]</group>
-                <key>parameter2</key>
-                <status>0xB3</status>
-                <midino>0x2B</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 1 - normal</description>
@@ -967,15 +871,7 @@
                 <key>parameter1</key>
                 <status>0xB0</status>
                 <midino>0x0F</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 1 - normal</description>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter1</key>
-                <status>0xB0</status>
-                <midino>0x2F</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 2 - normal</description>
@@ -983,15 +879,7 @@
                 <key>parameter1</key>
                 <status>0xB1</status>
                 <midino>0x0F</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 2 - normal</description>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter1</key>
-                <status>0xB1</status>
-                <midino>0x2F</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 3 - normal</description>
@@ -999,15 +887,7 @@
                 <key>parameter1</key>
                 <status>0xB2</status>
                 <midino>0x0F</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 3 - normal</description>
-                <group>[EqualizerRack1_[Channel3]_Effect1]</group>
-                <key>parameter1</key>
-                <status>0xB2</status>
-                <midino>0x2F</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M5 EQ Mid - Deck 4 - normal</description>
@@ -1015,15 +895,7 @@
                 <key>parameter1</key>
                 <status>0xB3</status>
                 <midino>0x0F</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M5 EQ Mid - Deck 4 - normal</description>
-                <group>[EqualizerRack1_[Channel4]_Effect1]</group>
-                <key>parameter1</key>
-                <status>0xB3</status>
-                <midino>0x2F</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M12 HEADPHONES MIXING - rotate - Monitor Balance</description>
@@ -1031,15 +903,7 @@
                 <key>headMix</key>
                 <status>0xB6</status>
                 <midino>0x0C</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M12 HEADPHONES MIXING - rotate - Monitor Balance</description>
-                <group>[Master]</group>
-                <key>headMix</key>
-                <status>0xB6</status>
-                <midino>0x2C</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>M13 HEADPHONES Level - rotate - Monitor Balance</description>
@@ -1047,15 +911,7 @@
                 <key>headGain</key>
                 <status>0xB6</status>
                 <midino>0x0D</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>M13 HEADPHONES Level - rotate - Monitor Balance</description>
-                <group>[Master]</group>
-                <key>headGain</key>
-                <status>0xB6</status>
-                <midino>0x2D</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>Effect Color FX (CH {i+1})</description>
@@ -1063,7 +919,7 @@
                 <key>super1</key>
                 <status>0xB6</status>
                 <midino>0x0D</midino>
-                <options><fourteen-bit-msb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>Effect Color FX (CH {i+1})</description>
@@ -1071,7 +927,7 @@
                 <key>super1</key>
                 <status>0xB6</status>
                 <midino>0x0D</midino>
-                <options><fourteen-bit-msb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>Effect Color FX (CH {i+1})</description>
@@ -1079,7 +935,7 @@
                 <key>super1</key>
                 <status>0xB6</status>
                 <midino>0x0D</midino>
-                <options><fourteen-bit-msb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>Effect Color FX (CH {i+1})</description>
@@ -1087,39 +943,7 @@
                 <key>super1</key>
                 <status>0xB6</status>
                 <midino>0x0D</midino>
-                <options><fourteen-bit-msb/></options>
-            </control>
-            <control>
-                <description>Effect Color FX (CH {i+1})</description>
-                <group>[QuickEffectRack1_{i+1}]</group>
-                <key>super1</key>
-                <status>0xB6</status>
-                <midino>0x2D</midino>
-                <options><fourteen-bit-lsb/></options>
-            </control>
-            <control>
-                <description>Effect Color FX (CH {i+1})</description>
-                <group>[QuickEffectRack1_{i+1}]</group>
-                <key>super1</key>
-                <status>0xB6</status>
-                <midino>0x2D</midino>
-                <options><fourteen-bit-lsb/></options>
-            </control>
-            <control>
-                <description>Effect Color FX (CH {i+1})</description>
-                <group>[QuickEffectRack1_{i+1}]</group>
-                <key>super1</key>
-                <status>0xB6</status>
-                <midino>0x2D</midino>
-                <options><fourteen-bit-lsb/></options>
-            </control>
-            <control>
-                <description>Effect Color FX (CH {i+1})</description>
-                <group>[QuickEffectRack1_{i+1}]</group>
-                <key>super1</key>
-                <status>0xB6</status>
-                <midino>0x2D</midino>
-                <options><fourteen-bit-lsb/></options>
+                <options><FourteenBitCC/></options>
             </control>
             <control>
                 <description>F5 BEAT FX SELECT - rotate to change effect</description>

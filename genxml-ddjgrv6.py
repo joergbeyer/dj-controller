@@ -373,92 +373,64 @@ def section_mixer (xc, num_decks):
 
     xc.kv['key'] = 'pregain'
     for i in range(num_decks):
-        for midino, options in [ # TODO: FourteenBitCC
-            ('0x04', '<fourteen-bit-msb/>'), 
-            ('0x24', '<fourteen-bit-lsb/>'),
-        ]:
-            xc.kv['midino'] = midino
-            xc.kv['options'] = options
-            xc.kv['group'] = f'[Channel{i+1}]'
-            xc.kv['description'] = gen_description('M3', 'TRIM', i+1, 'normal')
-            xc.kv['status'] = hexfmt(int("0xB0",16)+i)
-            xc.print(il, 'control', entries)
+        xc.kv['midino'] = '0x04'
+        xc.kv['options'] = '<FourteenBitCC/>'
+        xc.kv['group'] = f'[Channel{i+1}]'
+        xc.kv['description'] = gen_description('M3', 'TRIM', i+1, 'normal')
+        xc.kv['status'] = hexfmt(int("0xB0",16)+i)
+        xc.print(il, 'control', entries)
 
     xc.kv['key'] = 'parameter3'
     for i in range(num_decks):
-        for midino, options in [ #TODO: FourteenBitCC
-            ('0x07', '<fourteen-bit-msb/>'),
-            ('0x27', '<fourteen-bit-lsb/>'),
-        ]:
-            xc.kv['midino'] = midino
-            xc.kv['options'] = options
-            xc.kv['group'] =  f'[EqualizerRack1_[Channel{i+1}]_Effect1]'
-            xc.kv['description'] = gen_description('M4', 'EQ Hi', i+1, 'normal')
-            xc.kv['status'] = hexfmt(int("0xB0",16)+i)
-            xc.print(il, 'control', entries)
+        xc.kv['midino'] = '0x07'
+        xc.kv['options'] = '<FourteenBitCC/>'
+        xc.kv['group'] =  f'[EqualizerRack1_[Channel{i+1}]_Effect1]'
+        xc.kv['description'] = gen_description('M4', 'EQ Hi', i+1, 'normal')
+        xc.kv['status'] = hexfmt(int("0xB0",16)+i)
+        xc.print(il, 'control', entries)
 
     xc.kv['key'] = 'parameter2'
     for i in range(num_decks):
-        for midino, options in [ #TODO: FourteenBitCC
-            ('0x0B', '<fourteen-bit-msb/>'),
-            ('0x2B', '<fourteen-bit-lsb/>'),
-        ]:
-            xc.kv['midino'] = midino
-            xc.kv['options'] = options
-            xc.kv['group'] =  f'[EqualizerRack1_[Channel{i+1}]_Effect1]'
-            xc.kv['description'] = gen_description('M5', 'EQ Mid', i+1, 'normal')
-            xc.kv['status'] = hexfmt(int("0xB0",16)+i)
-            xc.print(il, 'control', entries)
+        xc.kv['midino'] = '0x0B'
+        xc.kv['options'] = '<FourteenBitCC/>'
+        xc.kv['group'] =  f'[EqualizerRack1_[Channel{i+1}]_Effect1]'
+        xc.kv['description'] = gen_description('M5', 'EQ Mid', i+1, 'normal')
+        xc.kv['status'] = hexfmt(int("0xB0",16)+i)
+        xc.print(il, 'control', entries)
 
     xc.kv['key'] = 'parameter1'
     for i in range(num_decks):
-        for midino, options in [ #TODO: FourteenBitCC
-            ('0x0F', '<fourteen-bit-msb/>'),
-            ('0x2F', '<fourteen-bit-lsb/>'),
-        ]:
-            xc.kv['midino'] = midino
-            xc.kv['options'] = options
-            xc.kv['group'] =  f'[EqualizerRack1_[Channel{i+1}]_Effect1]'
-            xc.kv['description'] = gen_description('M5', 'EQ Mid', i+1, 'normal')
-            xc.kv['status'] = hexfmt(int("0xB0",16)+i)
-            xc.print(il, 'control', entries)
+        xc.kv['midino'] = '0x0F'
+        xc.kv['options'] = '<FourteenBitCC/>'
+        xc.kv['group'] =  f'[EqualizerRack1_[Channel{i+1}]_Effect1]'
+        xc.kv['description'] = gen_description('M5', 'EQ Mid', i+1, 'normal')
+        xc.kv['status'] = hexfmt(int("0xB0",16)+i)
+        xc.print(il, 'control', entries)
 
     xc.kv['key'] = 'headMix'
     xc.kv['group'] =  '[Master]'
     xc.kv['description'] = 'M12 HEADPHONES MIXING - rotate - Monitor Balance'
     xc.kv['status'] = '0xB6'
-    for midino, options in [ #TODO: FourteenBitCC
-        ('0x0C', '<fourteen-bit-msb/>'),
-        ('0x2C', '<fourteen-bit-lsb/>'),
-    ]:
-        xc.kv['midino'] = midino
-        xc.kv['options'] = options
-        xc.print(il, 'control', entries)
+    xc.kv['midino'] = '0x0C'
+    xc.kv['options'] = '<FourteenBitCC/>'
+    xc.print(il, 'control', entries)
 
     xc.kv['key'] = 'headGain'
     xc.kv['group'] =  '[Master]'
     xc.kv['description'] = 'M13 HEADPHONES Level - rotate - Monitor Balance'
     xc.kv['status'] = '0xB6'
-    for midino, options in [ #TODO: FourteenBitCC
-        ('0x0D', '<fourteen-bit-msb/>'),
-        ('0x2D', '<fourteen-bit-lsb/>'),
-    ]:
-        xc.kv['midino'] = midino
-        xc.kv['options'] = options
-        xc.print(il, 'control', entries)
+    xc.kv['midino'] = '0x0D'
+    xc.kv['options'] = '<FourteenBitCC/>'
+    xc.print(il, 'control', entries)
 
     xc.kv['key'] = 'super1'
     xc.kv['status'] = '0xB6'
-    for midino, options in [ #TODO: FourteenBitCC
-        ('0x0D', '<fourteen-bit-msb/>'),
-        ('0x2D', '<fourteen-bit-lsb/>'),
-    ]:
-        for i in range(num_decks):
-            xc.kv['description'] = 'Effect Color FX (CH {i+1})'
-            xc.kv['group'] =  '[QuickEffectRack1_{i+1}]'
-            xc.kv['midino'] = midino
-            xc.kv['options'] = options
-            xc.print(il, 'control', entries)
+    xc.kv['midino'] = '0x0D'
+    xc.kv['options'] = '<FourteenBitCC/>'
+    for i in range(num_decks):
+        xc.kv['description'] = 'Effect Color FX (CH {i+1})'
+        xc.kv['group'] =  '[QuickEffectRack1_{i+1}]'
+        xc.print(il, 'control', entries)
 
     xc.kv['group'] = '[EffectRack1_EffectUnit1]'
     xc.kv['description'] = 'F5 BEAT FX SELECT - rotate to change effect'
