@@ -38,6 +38,10 @@ PioneerDDJGRV6.fxTable = [
     0.962  // Pos 12
 ];
 
+var ON = 0x7F,
+    OFF = 0x00,
+    DOWN = 0x7F;
+
 // Mapping: Hardware-Position -> Interne Mixxx-ID
 // see fxSelectAbsolute()
 PioneerDDJGRV6.effectIdTable = [
@@ -411,6 +415,18 @@ PioneerDDJGRV6.loopToggle = function(value, group, control) {
         PioneerDDJGRV6.loopAdjustIn[channel] = false;
         PioneerDDJGRV6.loopAdjustOut[channel] = false;
     }
+};
+
+PioneerDDJGRV6.loopIn = function(channel, control, value, status, group) {
+    engine.setValue(group, "loop_in", value === DOWN);
+};
+
+PioneerDDJGRV6.loopOut = function(channel, control, value, status, group) {
+    engine.setValue(group, "loop_out", value === DOWN);
+};
+
+PioneerDDJGRV6.reloopExit = function(channel, control, value, status, group) {
+    engine.setValue(group, "reloop_toggle", value === DOWN);
 };
 
 /**
