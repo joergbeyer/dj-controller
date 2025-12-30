@@ -271,7 +271,7 @@ def section_deck(xc, num_decks):
     xc.comment(il, 'control', '<!-- tempo slider end -->')
 
     xc.kv['midino'] = '0x10'
-    xc.kv['key'] = 'loop_in'
+    xc.kv['key'] = f'{prefix}.loopIn'
     for i in range(num_decks):
         xc.kv['group'] = f'[Channel{i+1}]'
         xc.kv['description'] = gen_description('D7', 'LOOP IN/4 BEAT', i+1, 'press, set loop in')
@@ -279,7 +279,7 @@ def section_deck(xc, num_decks):
         xc.print(il, 'control', entries)
 
     xc.kv['midino'] = '0x11'
-    xc.kv['key'] = 'loop_out'
+    xc.kv['key'] = f'{prefix}.loopOut'
     for i in range(num_decks):
         xc.kv['group'] = f'[Channel{i+1}]'
         xc.kv['description'] = gen_description('D7', 'LOOP IN/4 BEAT', i+1, 'press, set loop out')
@@ -287,7 +287,7 @@ def section_deck(xc, num_decks):
         xc.print(il, 'control', entries)
 
     xc.kv['midino'] = '0x4D'
-    xc.kv['key'] = 'reloop_toggle'
+    xc.kv['key'] = f'{prefix}.reloopExit'
     for i in range(num_decks):
         xc.kv['group'] = f'[Channel{i+1}]'
         xc.kv['description'] = gen_description('D7', 'RELOOP/EXIT', i+1, 'loop off, loop on')

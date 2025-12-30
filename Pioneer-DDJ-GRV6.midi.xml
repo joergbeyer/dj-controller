@@ -3,7 +3,7 @@
     <info>
         <name>Pioneer DDJ-GRV6</name>
         <author>Jörg Beyer</author>
-        <description>Midi Mapping for the Pioneer DDJ-GRV6, 2025-12-28 18:52</description>
+        <description>Midi Mapping for the Pioneer DDJ-GRV6, 2025-12-30 18:45</description>
         <forums>TBD</forums>
     </info>
     <controller id="DDJ-GRV6">
@@ -503,7 +503,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 1 - press, set loop in</description>
                 <group>[Channel1]</group>
-                <key>loop_in</key>
+                <key>PioneerDDJGRV6.loopIn</key>
                 <status>0x90</status>
                 <midino>0x10</midino>
                 <options><Script-Binding/></options>
@@ -511,7 +511,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 2 - press, set loop in</description>
                 <group>[Channel2]</group>
-                <key>loop_in</key>
+                <key>PioneerDDJGRV6.loopIn</key>
                 <status>0x91</status>
                 <midino>0x10</midino>
                 <options><Script-Binding/></options>
@@ -519,7 +519,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 3 - press, set loop in</description>
                 <group>[Channel3]</group>
-                <key>loop_in</key>
+                <key>PioneerDDJGRV6.loopIn</key>
                 <status>0x92</status>
                 <midino>0x10</midino>
                 <options><Script-Binding/></options>
@@ -527,7 +527,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 4 - press, set loop in</description>
                 <group>[Channel4]</group>
-                <key>loop_in</key>
+                <key>PioneerDDJGRV6.loopIn</key>
                 <status>0x93</status>
                 <midino>0x10</midino>
                 <options><Script-Binding/></options>
@@ -535,7 +535,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 1 - press, set loop out</description>
                 <group>[Channel1]</group>
-                <key>loop_out</key>
+                <key>PioneerDDJGRV6.loopOut</key>
                 <status>0x90</status>
                 <midino>0x11</midino>
                 <options><Script-Binding/></options>
@@ -543,7 +543,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 2 - press, set loop out</description>
                 <group>[Channel2]</group>
-                <key>loop_out</key>
+                <key>PioneerDDJGRV6.loopOut</key>
                 <status>0x91</status>
                 <midino>0x11</midino>
                 <options><Script-Binding/></options>
@@ -551,7 +551,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 3 - press, set loop out</description>
                 <group>[Channel3]</group>
-                <key>loop_out</key>
+                <key>PioneerDDJGRV6.loopOut</key>
                 <status>0x92</status>
                 <midino>0x11</midino>
                 <options><Script-Binding/></options>
@@ -559,7 +559,7 @@
             <control>
                 <description>D7 LOOP IN/4 BEAT - Deck 4 - press, set loop out</description>
                 <group>[Channel4]</group>
-                <key>loop_out</key>
+                <key>PioneerDDJGRV6.loopOut</key>
                 <status>0x93</status>
                 <midino>0x11</midino>
                 <options><Script-Binding/></options>
@@ -567,7 +567,7 @@
             <control>
                 <description>D7 RELOOP/EXIT - Deck 1 - loop off, loop on</description>
                 <group>[Channel1]</group>
-                <key>reloop_toggle</key>
+                <key>PioneerDDJGRV6.reloopExit</key>
                 <status>0x90</status>
                 <midino>0x4D</midino>
                 <options><Script-Binding/></options>
@@ -575,7 +575,7 @@
             <control>
                 <description>D7 RELOOP/EXIT - Deck 2 - loop off, loop on</description>
                 <group>[Channel2]</group>
-                <key>reloop_toggle</key>
+                <key>PioneerDDJGRV6.reloopExit</key>
                 <status>0x91</status>
                 <midino>0x4D</midino>
                 <options><Script-Binding/></options>
@@ -583,7 +583,7 @@
             <control>
                 <description>D7 RELOOP/EXIT - Deck 3 - loop off, loop on</description>
                 <group>[Channel3]</group>
-                <key>reloop_toggle</key>
+                <key>PioneerDDJGRV6.reloopExit</key>
                 <status>0x92</status>
                 <midino>0x4D</midino>
                 <options><Script-Binding/></options>
@@ -591,7 +591,7 @@
             <control>
                 <description>D7 RELOOP/EXIT - Deck 4 - loop off, loop on</description>
                 <group>[Channel4]</group>
-                <key>reloop_toggle</key>
+                <key>PioneerDDJGRV6.reloopExit</key>
                 <status>0x93</status>
                 <midino>0x4D</midino>
                 <options><Script-Binding/></options>
